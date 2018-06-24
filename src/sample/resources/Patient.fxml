@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="doctor-pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#initialize" prefHeight="500.0" prefWidth="700.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.PatientController">
+   <children>
+
+      <JFXTabPane minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" rotateGraphic="true" stylesheets="@css/style.css" tabClosingPolicy="ALL_TABS" tabMinWidth="343.0">
+         <Tab text="Кабинет">
+            <content>
+               <Pane prefHeight="500.0" prefWidth="700.0">
+                  <JFXButton fx:id="makeApp" buttonType="RAISED" layoutX="70.0" layoutY="326.0" mnemonicParsing="false" onAction="#makeApp" prefHeight="36.0" prefWidth="238.0" stylesheets="@css/style.css" text="Записаться на прием" />
+                  <JFXButton id="menu-button" fx:id="backToMenu" buttonType="FLAT" layoutX="231.0" layoutY="420.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="36.0" prefWidth="238.0" stylesheets="@css/style.css" text="Выйти" />
+                  <Text fx:id="patientName" layoutX="50.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Имя" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="32.0" />
+                     </font>
+                  </Text>
+                  <JFXTreeTableView fx:id="pets" layoutX="365.0" layoutY="115.0" opacity="0.82" prefHeight="188.0" prefWidth="285.0" />
+                  <Text fx:id="patientName1" layoutX="189.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Питомцы" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="21.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="addPet" buttonType="RAISED" layoutX="428.0" layoutY="326.0" mnemonicParsing="false" onAction="#addPet" prefHeight="36.0" prefWidth="159.0" stylesheets="@css/style.css" text="Добавить/Удалить" />
+                  <JFXTreeTableView fx:id="tickets" layoutX="47.0" layoutY="115.0" opacity="0.82" prefHeight="188.0" prefWidth="285.0" />
+                  <Text fx:id="patientName11" layoutX="-111.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Записи" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="21.0" />
+                     </font>
+                  </Text>
+               </Pane>
+            </content>
+         </Tab>
+         <Tab text="Аккаунт">
+            <content>
+               <Pane prefHeight="500.0" prefWidth="700.0">
+                  <Pane id="background-pane" layoutX="205.0" layoutY="14.0" maxHeight="500" minWidth="283.0" opacity="0.25" prefHeight="360.0" prefWidth="283.0" stylesheets="@css/style.css" />
+                  <Text fill="white" layoutX="50.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИМЯ" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="25.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField id="editText" fx:id="name" focusColor="white" layoutX="238.0" layoutY="60.0" unFocusColor="white">
+                     <font>
+                     <Font name="Ubuntu Light" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="editText" fx:id="lastname" focusColor="white" layoutX="239.0" layoutY="154.0" unFocusColor="white">
+                     <font>
+                        <Font name="Ubuntu Light" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="editText" fx:id="num" focusColor="white" layoutX="239.0" layoutY="255.0" unFocusColor="white">
+                     <font>
+                        <Font name="Ubuntu Light" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="gender" focusColor="#2B545E" layoutX="245.0" layoutY="335.0" prefHeight="23.0" prefWidth="209.0" stylesheets="@css/style.css" unFocusColor="#2B545E" />
+                  <Text fill="white" layoutX="50.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФАМИЛИЯ" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="white" layoutX="49.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="НОМЕР ТЕЛЕФОНА" textAlignment="CENTER" wrappingWidth="600.0">
+                     <font>
+                        <Font name="Ubuntu Light" size="25.0" />
+                     </font>
+                  </Text>
+                  <JFXButton id="menu-button" fx:id="saveChanges" buttonType="FLAT" layoutX="233.0" layoutY="374.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="36.0" prefWidth="238.0" stylesheets="@css/style.css" text="Сохранить" />
+                  <JFXButton id="dangerous-button" fx:id="deleteProfile" buttonType="FLAT" layoutX="231.0" layoutY="420.0" mnemonicParsing="false" onAction="#deleteProfile" prefHeight="36.0" prefWidth="238.0" stylesheets="@css/style.css" text="Удалить профиль" />
+               </Pane>
+            </content>
+         </Tab>
+      </JFXTabPane>
+   </children>
+
+</Pane>

@@ -1,0 +1,162 @@
+.jfx-button {
+    -jfx-button-type: FLAT;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+/*Raised button example */
+.jfx-button{
+    -jfx-button-type: RAISED;
+    -fx-background-color: #008055;
+    -fx-text-fill: white;
+}
+
+#menu-button{
+    -jfx-button-type: FLAT;
+    -fx-background-color: #008080;
+    -fx-text-fill: white;
+}
+
+#dangerous-button{
+    -jfx-button-type: FLAT;
+    -fx-background-color: #A52A2A;
+    -fx-text-fill: white;
+}
+
+
+
+/* Styling the slider track */
+.jfx-slider > .track {
+    -fx-background-color: #A9A9A9;
+}
+
+/* Styling the slider thumb */
+.jfx-slider > .thumb {
+    -fx-background-color: #008055;
+}
+
+/* Styling the filled track */
+.jfx-slider > .colored-track {
+    -fx-background-color: #008055;
+}
+
+/* Styling the animated thumb */
+.jfx-slider > .animated-thumb {
+    -fx-background-color: #008055;
+}
+
+/* Styling the slider value text inside animated thumb */
+.jfx-slider .slider-value {
+    -fx-fill: white;
+    -fx-stroke: white;
+}
+
+#patient-makes{
+    -fx-background-image: url("../images/makeapp_background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-background-position: center center;
+}
+
+#doctor-pane{
+    -fx-background-image: url("../images/login.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-background-position: center center;
+}
+
+#doctor-pane2{
+    -fx-background-image: url("../images/makeapp_background.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-background-position: center center;
+}
+
+#pane{
+    -fx-background-image: url("../images/start.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-background-position: center center;
+}
+
+#pane-doctor{
+    -fx-background-image: url("../images/login-doctor.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-background-position: center center;
+}
+.jfx-tab-pane .tab-header-background
+{
+    -fx-background-color: #35464F;
+}
+
+#jfxfield .jfx-text-field{
+    -jfx-unfocus-color: #2B545E;
+    -jfx-focus-color: #2B545E;
+    -fx-text-fill: WHITE;
+}
+
+.text-area {
+    -fx-background-color: rgba(53,89,119,0.4);
+    -fx-text-fill: white;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.combo-box {
+    -fx-background-color: #2B545E;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+}
+.combo-box .cell{
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #2B545E;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled {
+    -fx-background-color: #2B545E;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: #2E5A66;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #346673;
+    -fx-text-fill: white;
+}
+
+#background-pane
+{
+    -fx-background-color: BLACK;
+}
+
+#editText
+{
+    -jfx-unfocus-color: white;
+    -jfx-focus-color: white;
+    -fx-text-fill: white;
+}
+
+.jfx-combo-box
+{
+    -fx-text-fill: white;
+    -fx-fill: white;
+}

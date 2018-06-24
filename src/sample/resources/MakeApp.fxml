@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane id="patient-makes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#initialize" prefHeight="500.0" prefWidth="700.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.resources.PatientControllers.MakeAppController">
+   <children>
+      <Text fill="white" layoutX="153.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ветеринар" textAlignment="CENTER" wrappingWidth="171.00000232458115">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+       <Text fill="white" layoutX="264.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Питомец" textAlignment="CENTER" wrappingWidth="171.00000232458115">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Text>
+       <JFXTimePicker id="jfxfield" fx:id="timePicker" defaultColor="#2B545E" layoutX="358.0" layoutY="106.0" overLay="true" stylesheets="@css/style.css" />
+       <JFXComboBox fx:id="doctorComboBox" focusColor="#2B545E" layoutX="318.0" layoutY="51.0" prefHeight="23.0" prefWidth="209.0" stylesheets="@css/style.css" unFocusColor="#2B545E" />
+       <TextArea id="resultarea" fx:id="resultTextArea" editable="false" layoutX="123.0" layoutY="305.0" prefHeight="181.0" prefWidth="455.0" stylesheets="@css/style.css" />
+       <JFXComboBox fx:id="animalComboBox" focusColor="#2B545E" layoutX="245.0" layoutY="184.0" prefHeight="23.0" prefWidth="209.0" stylesheets="@css/style.css" unFocusColor="#2B545E" />
+       <JFXButton layoutX="232.0" layoutY="268.0" mnemonicParsing="false" onAction="#confirm" stylesheets="@css/style.css" text="Запись" />
+       <JFXButton fx:id="backToMenu" buttonType="FLAT" layoutX="408.0" layoutY="268.0" mnemonicParsing="false" onAction="#backToMenu" text="Назад" textFill="black" />
+
+       <JFXDatePicker id="jfxfield" fx:id="datePicker" defaultColor="#2B545E" layoutX="163.0" layoutY="106.0" overLay="true" stylesheets="css/style.css" />
+   </children>
+</Pane>

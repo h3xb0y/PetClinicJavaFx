@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<Pane id="pane-doctor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <JFXTextField fx:id="loginField" layoutX="273.0" layoutY="141.0" />
+      <JFXPasswordField fx:id="passwordField" layoutX="273.0" layoutY="224.0" />
+      <Text layoutX="50.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ЛОГИН" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="Ubuntu Light" size="25.0" />
+         </font>
+      </Text>
+       <Text layoutX="50.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПАРОЛЬ" textAlignment="CENTER" wrappingWidth="600.0">
+           <font>
+               <Font name="Ubuntu Light" size="25.0" />
+           </font>
+       </Text>
+       <JFXButton id="menu-button" fx:id="logAsADoctor" layoutX="269.0" layoutY="276.0" mnemonicParsing="false" onAction="#login" prefHeight="53.0" prefWidth="165.0" stylesheets="@css/style.css" text="ВОЙТИ">
+           <font>
+               <Font name="Ubuntu Light" size="13.0" />
+           </font></JFXButton>
+       <JFXButton id="menu-button" buttonType="FLAT" layoutX="269.0" layoutY="337.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="53.0" prefWidth="165.0" stylesheets="@css/style.css" text="Назад" />
+      <Text fill="RED" layoutX="51.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0"
+           visible="false" fx:id="error" text="*логин или пароль не совпадают" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font name="Ubuntu Light" size="25.0" />
+         </font>
+      </Text>
+
+   </children>
+</Pane>
