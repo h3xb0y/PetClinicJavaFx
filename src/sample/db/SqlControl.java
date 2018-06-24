@@ -43,13 +43,18 @@ public class SqlControl {
     public static void prepare()
     {
         connectToDatabase();
+        System.out.println(ANSI_CYAN+"Создание таблицы для триггера..."+ANSI_RESET);
+        createProcedure(Query.tableForTrigger);
+        System.out.println(ANSI_CYAN+"Создание триггера..."+ANSI_RESET);
+        createProcedure(Query.createTrigger);
         System.out.println(ANSI_CYAN+"Создание процедур..."+ANSI_RESET);
         createProcedure(Query.createDoctorProcedure);
         createProcedure(Query.createAnimalProcedure);
         createProcedure(Query.createCabinetProcedure);
         createProcedure(Query.createOwnerProcedure);
         createProcedure(Query.createKindProcedure);
-        System.out.println(ANSI_CYAN+"Создание процедур завершено ✔"+ANSI_RESET);
+        createProcedure(Query.createLastUpdateProcedure);
+        System.out.println(ANSI_CYAN+"Создание завершено ✔"+ANSI_RESET);
     }
 
     private static void connectToDatabase()
@@ -442,6 +447,20 @@ public class SqlControl {
     public static void updateDoctor(Doctor d){
         UpdateQuery("update doctor set doctor_name= '"+d.getName()+"',doctor_lastname= '"+d.getLastName()+"',doctor_gender='"+
                 d.getGender()+"',doctor_num= '"+d.getNum()+"' where doctor_id='"+d.getID()+"';");
+    }
+
+    public static String lastUpdate(String id)
+    {
+        String out = "";
+        ExecuteQuery("call getLastUpdate('"+id+"');");
+        try {
+            while (rs.next()) {
+                out = rs.getString("changedat");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return out;
     }
 
 }

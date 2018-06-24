@@ -42,6 +42,7 @@ public class DoctorController {
     @FXML JFXTextField doctorName;
     @FXML JFXTextField doctorLastName;
     @FXML JFXTextField doctorNum;
+    @FXML Text lastUpdate;
     @FXML
     JFXComboBox<String> gender;
     private String[] genders = new String[]{
@@ -87,6 +88,8 @@ public class DoctorController {
         doctorNum.setText(doctor.getNum());
         gender.setItems(FXCollections.observableArrayList(genders));
         PatientController.setGender(doctor.getGender(), gender.getSelectionModel());
+
+        lastUpdate.setText("Последнее обновление: "+SqlControl.lastUpdate(doctor.getID()));
     }
    private void RefreshTickets(){
        JFXTreeTableColumn<Ticket,String> time = new JFXTreeTableColumn<>("Время");
