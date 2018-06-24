@@ -1,2 +1,6 @@
-# PetClinicJavaFx
-Клиника домашних животных на JavaFX + JFoenix
+![](https://github.com/h3xb0y/PetClinicJavaFx/blob/master/info/1.png)
+![](https://github.com/h3xb0y/PetClinicJavaFx/blob/master/info/2.png)
+[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
